@@ -51,7 +51,8 @@ pip install -r requirements.txt
 ### 3. Run training & detection evaluation
 
 ```bash
-python src/train.py \
+cd src
+python train.py \
   --dataset cifar10 \
   --arch resnet110 \
   --data_dir ./data \
@@ -106,7 +107,8 @@ MODEL_SETTINGS = {
 Override via CLI:
 
 ```bash
-python src/train.py \
+cd src
+python train.py \
   --num_aug 6 \
   --recov_dim 256 \
   --recov_depth 5 \
@@ -120,28 +122,28 @@ python src/train.py \
 
 - CIFAR-10 + ResNet-110
 ```bash
-python src/train.py --dataset cifar10 --arch resnet110
+python train.py --dataset cifar10 --arch resnet110
 ```
 - CIFAR-100 + ResNet-18
 ```bash
-python src/train.py --dataset cifar100 --arch resnet18
+python train.py --dataset cifar100 --arch resnet18
 ```
 - CIFAR-100 + ShuffleNetV2
 ```bash
-python src/train.py --dataset cifar100 --arch shufflenetv2_x1_0
+python train.py --dataset cifar100 --arch shufflenetv2_x1_0
 ```
 - CIFAR-100 + MobileNetV2
 ```bash
-python src/train.py --dataset cifar100 --arch mobilenetv2_x0_5
+python train.py --dataset cifar100 --arch mobilenetv2_x0_5
 ```
 - CIFAR-100 + RepVGG
 ```bash
-python src/train.py --dataset cifar100 --arch repvgg_a0
+python train.py --dataset cifar100 --arch repvgg_a0
 ```
 - 	ImageNet + DenseNet-121
 (Set --ata_dir to your ImageNet path)
 ```bash
-python src/train.py --dataset imagenet --arch densenet121 --data_dir /path/to/imagenet --recov_depth 3 --train_break True
+python train.py --dataset imagenet --arch densenet121 --data_dir /path/to/imagenet --recov_depth 3 --train_break True
 ```
 
 ---
