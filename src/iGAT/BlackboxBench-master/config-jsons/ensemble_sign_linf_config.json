@@ -1,0 +1,26 @@
+{
+  "_comment1": "===== DATASET CONFIGURATION =====",
+  "dset_config": {},
+  "_comment2": "===== EVAL CONFIGURATION =====",
+  "num_eval_examples": 10000,
+  "_comment3": "=====ADVERSARIAL EXAMPLES CONFIGURATION=====",
+  "attack_name": "SignAttack",
+  "attack_config": {
+    "batch_size" : 500,
+    "name": "Sign",
+    "epsilon": 8,
+    "p": "inf",
+    "fd_eta": 12.75,
+    "max_loss_queries": 500
+  },
+  "device": "/gpu:0",
+  "modeln": "ensemble",
+  "target": false,
+  "target_type": "median",
+  "seed": 123,
+  "model_file": "../ckpts/iGAT_DVERGE_cifar100_1.pth",
+  "leaky_relu": false,
+  "depth": 20,
+  "num_classes": 100,
+  "dset_name": "cifar100"
+}

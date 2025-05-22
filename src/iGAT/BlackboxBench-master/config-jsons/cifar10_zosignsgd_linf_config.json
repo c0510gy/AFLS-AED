@@ -1,0 +1,24 @@
+{
+  "_comment1": "===== DATASET CONFIGURATION =====",
+  "dset_name": "cifar10",
+  "dset_config": {},
+  "_comment2": "===== EVAL CONFIGURATION =====",
+  "num_eval_examples": 10000,
+  "_comment3": "=====ADVERSARIAL EXAMPLES CONFIGURATION=====",
+  "attack_name": "ZOSignSGDAttack",
+  "attack_config": {
+    "batch_size" : 50,
+    "name": "zosignsgd",
+    "epsilon": 8,
+    "p": "inf",
+    "fd_eta": 2.55,
+    "lr": 2.55,
+    "q": 30,
+    "max_loss_queries": 600
+  },
+  "device": "/gpu:0",
+  "modeln": "ensemble",
+  "target": false,
+  "target_type": "median",
+  "seed": 123
+}
