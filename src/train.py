@@ -185,6 +185,8 @@ if __name__ == "__main__":
     parser.add_argument("--num_aug", type=int, default=None)
     parser.add_argument("--recov_dim", type=int, default=None)
     parser.add_argument("--recov_depth", type=int, default=None)
+    parser.add_argument("--k_rec", type=int, default=0)
+    parser.add_argument("--k_logit", type=int, default=0)
     parser.add_argument(
         "--attacks", nargs="+", choices=ATTACKS,
         default=["FGSM", "PGD"] # "CW" , "AutoAttack", "Square"
@@ -241,7 +243,7 @@ if __name__ == "__main__":
             atk_fn = ATTACK_FUN[atk]
             atk_fn = partial(atk_fn, filename=f'attack_samples_{args.dataset}_{args.arch}_{atk}.pt')
             robust_acc, detect_RT_auc, detect_LT_auc, (clean_RT_scores, adv_RT_scores), (clean_LT_scores, adv_LT_scores) = validate_detection_and_robust(
-                model, test_loader, atk_fn, transform_norm, mean, std, device
+                model, test_loader, atk_fn, transform_norm, mean, std, device, k_rec=args.k_rec, k_logit=args.k_logit
             )
             
             if max_RT_scores_by_attack[atk] is None or max_RT_scores_by_attack[atk][0] < detect_RT_auc:
