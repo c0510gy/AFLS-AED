@@ -2,17 +2,17 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.12586-B31B1B.svg)](https://arxiv.org/abs/2505.12586)   [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)]()
 
-![A Few Large Shifts Assumption](figures/manifold_figure_v2.png)
-<p align="center"><em>Figure&nbsp;1. Illustration of the A&nbsp;Few Large Shifts (AFLS) assumption.</em> </p>
-
 > **A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection**  
 > Sanggeon Yun, Ryozo Masukawa, Hyunwoo Oh, Nathaniel D. Bastian, Mohsen Imani  
 > *arXiv:2505.12586*  
 
+![A Few Large Shifts Assumption](figures/manifold_figure_v2.png)
+<p align="center"><em>Figure&nbsp;1. Illustration of the A&nbsp;Few Large Shifts (AFLS) assumption.</em> </p>
+
 A lightweight, plug-in detection framework that leverages internal layer-wise inconsistencies of a frozen classifier to detect adversarial examples--is self-sufficient (no adversarial examples), model-local (no external pre-trained models such as SSL), and low-overhead (no complex structures such as kNN graphs to maintain reference sets or excessive augmentations), making it ideal for scalable deployment.
 
 ![Pipeline Overview](figures/overview.png)
-<em>Figure&nbsp;2. Recovery Testing (RT) and Logit‑layer Testing (LT) are fused into RLT via quantile normalisation.</em></p>
+<p align="center"><em>Figure&nbsp;2. Recovery Testing (RT) and Logit‑layer Testing (LT) are fused into RLT via quantile normalisation.</em></p>
 
 ---
 
