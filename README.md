@@ -174,7 +174,7 @@ If you find our work useful, please cite:
 
 ```bibtex
 @article{yun2025few,
-  title={{A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection}},
+  title={A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection},
   author={Yun, Sanggeon and Masukawa, Ryozo and Oh, Hyunwoo and Bastian, Nathaniel D and Imani, Mohsen},
   journal={arXiv preprint arXiv:2505.12586},
   year={2025}
