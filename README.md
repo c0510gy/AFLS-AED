@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.12586-B31B1B.svg)](https://arxiv.org/abs/2505.12586)   [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)]()
 
-> **A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection**  
+> [**A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection**](https://arxiv.org/abs/2505.12586)  
 > Sanggeon Yun, Ryozo Masukawa, Hyunwoo Oh, Nathaniel D. Bastian, Mohsen Imani  
 > *arXiv:2505.12586*  
 
