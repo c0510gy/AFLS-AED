@@ -1,10 +1,11 @@
 # A Few Large Shifts (AFLS) Assumption-based Adversarial Examples (AEs) Detection
 
-[![arXiv](https://img.shields.io/badge/arXiv-2505.12586-B31B1B.svg)](https://arxiv.org/abs/2505.12586)   [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)]()
+
+[![OpenReview](https://img.shields.io/badge/OpenReview-Paper-2E86AB.svg)](https://openreview.net/pdf?id=0xXYBxDNHA)   [![arXiv](https://img.shields.io/badge/arXiv-2505.12586-B31B1B.svg)](https://arxiv.org/abs/2505.12586)   [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)]()
 
 > [**A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection**](https://arxiv.org/abs/2505.12586)  
 > Sanggeon Yun, Ryozo Masukawa, Hyunwoo Oh, Nathaniel D. Bastian, Mohsen Imani  
-> *arXiv:2505.12586*  
+> *Transactions on Machine Learning Research (TMLR)*  
 
 ![A Few Large Shifts Assumption](figures/manifold_figure_v2.png)
 <p align="center"><em>Figure&nbsp;1. Illustration of the A&nbsp;Few Large Shifts (AFLS) assumption.</em> </p>
@@ -173,10 +174,12 @@ python train.py --dataset imagenet --arch densenet121 --data_dir /path/to/imagen
 If you find our work useful, please cite:
 
 ```bibtex
-@article{yun2025few,
+@article{yun2026a,
   title={A Few Large Shifts: Layer-Inconsistency Based Minimal Overhead Adversarial Example Detection},
-  author={Yun, Sanggeon and Masukawa, Ryozo and Oh, Hyunwoo and Bastian, Nathaniel D and Imani, Mohsen},
-  journal={arXiv preprint arXiv:2505.12586},
-  year={2025}
+  author={Sanggeon Yun and Ryozo Masukawa and Hyunwoo Oh and Nathaniel D. Bastian and Mohsen Imani},
+  journal={Transactions on Machine Learning Research},
+  issn={2835-8856},
+  year={2026},
+  url={https://openreview.net/forum?id=0xXYBxDNHA}
 }
 ```
